@@ -36,7 +36,7 @@ function App() {
       })
   }, []);
 
-  // in the case of api taking longer than expected we display loading messag.
+  // in the case of api taking longer than expected we display loading message.
   if (loading) return <div>Loading GoDaddy Repos...</div>;
   // in the case of an error, display error message
   if (error) return <div>Error: {error.message}</div>;
